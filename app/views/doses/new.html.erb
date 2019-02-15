@@ -1,13 +1,28 @@
-<%= simple_form_for [@cocktail, @dose] do |f| %>
-  <%= f.error_notification %>
-  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+<div id="sec-nav" class="sec-navbar">
+  <h3>
+    <%= link_to "Mister Cocktails", cocktails_path %>
+  </h3>
+  <%= link_to "Criar um Cocktail", new_cocktail_path, class: 'create-cocktail-btn' %>
+</div>
 
-  <div class="form-inputs">
-    <%= f.input :description %>
-    <%= f.association :ingredient %>
-  </div>
+<div class="form">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-md-6">
+        <%= simple_form_for [@cocktail, @dose] do |f| %>
+        <%= f.error_notification %>
+        <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
+        <div class="form-inputs">
+          <%= f.input :description %>
+          <%= f.association :ingredient %>
+        </div>
+
+        <div class="form-actions">
+          <%= f.button :submit, class: 'btn-outline-dark'%>
+        </div>
+        <% end %>
+      </div>
+    </div>
   </div>
-<% end %>
+</div>

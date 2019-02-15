@@ -2,7 +2,7 @@
   <h3>
     <%= link_to "Mister Cocktails", cocktails_path %>
   </h3>
-  <%= link_to "Create a cocktail", new_cocktail_path, class: 'create-cocktail-btn' %>
+  <%= link_to "Criar um Cocktail", new_cocktail_path, class: 'create-cocktail-btn' %>
 </div>
 
 <div class="show">
@@ -21,8 +21,8 @@
             <% end %>
 
             <div class="cocktail-controller">
-              <%= link_to "Create Dose", new_cocktail_dose_path(@cocktail), class: 'btn-outline-dark'%>
-              <%= link_to "Delete", @cocktail, method: :delete, data: { confirm: 'Are you sure?'}, class: 'btn-outline-dark' %>
+              <%= link_to "Criar Dose", new_cocktail_dose_path(@cocktail), class: 'btn-outline-dark'%>
+              <%= link_to "Deletar", @cocktail, method: :delete, data: { confirm: 'Are you sure?'}, class: 'btn-outline-dark' %>
               <%= link_to "Home", cocktails_path, class: 'btn-outline-dark' %>
             </div>
           </div>
