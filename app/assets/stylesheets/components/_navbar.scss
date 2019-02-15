@@ -22,3 +22,19 @@
 .hide {
   display: none;
 }
+.sec-navbar {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  background: black;
+  h3, a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+}

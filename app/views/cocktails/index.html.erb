@@ -16,16 +16,18 @@
 
 
 <div class="container">
-  <div class="col-xs-12">
-    <h1>Cocktails</h1>
-
-    <%= link_to "Create a cocktail", new_cocktail_path, class: 'button-outline-dark' %>
-
-  </div>
   <div class="row">
-    <div class="main-cards">
+    <div class="col-xs-12">
+      <h1>Cocktails</h1>
+
+      <%= link_to "Create a cocktail", new_cocktail_path, class: 'button-outline-dark' %>
+
+    </div>
+  </div>
+  <div class="main-cards">
+    <div class="row">
       <% @cocktails.each do |cocktail| %>
-      <div class="col-xs-6 col-md-3 ">
+      <div class="col-xs-6 col-sm-4 col-md-3 ">
         <%= link_to cocktail, class: "main-card" do %>
         <%= cl_image_tag cocktail.photo, crop: :fill %>
         <div class="main-card-content">

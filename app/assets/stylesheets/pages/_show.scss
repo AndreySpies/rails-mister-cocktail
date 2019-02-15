@@ -1,0 +1,31 @@
+.show {
+  background: #efefef;
+}
+.cocktail {
+  background: #efefef;
+  position: relative;
+}
+.cocktail-info {
+  height: calc(100vh - 85px);
+  max-height: calc(100vh - 85px);
+}
+.cocktail img {
+  margin-right: -10px;
+  width: 100%;
+  height: calc(100vh - 60px);
+}
+.show .padding-0 {
+  padding: 0;
+}
+.cocktail p {
+  font-size: 24px;
+}
+.cocktail-controller {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+}
+.cocktail-controller a {
+  margin: 0 15px;
+}

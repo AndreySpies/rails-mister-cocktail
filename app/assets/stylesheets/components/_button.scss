@@ -31,3 +31,27 @@
   color: black;
   background: white;
 }
+.upload-file {
+  background: transparent;
+  padding: 13px 13px;
+  border: 1px solid black;
+}
+.create-cocktail-btn {
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 11px;
+}
+.btn-outline-dark {
+  color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 10px;
+  text-decoration: none;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+.btn-outline-dark:hover {
+  transition: 0.3s;
+  text-decoration: none;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.16), 0 1px 5px 0 rgba(0,0,0,.12);
+}
