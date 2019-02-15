@@ -1,0 +1,40 @@
+<div id="main-nav" class="main-navbar">
+  <h3>
+    Mister Cocktails
+  </h3>
+  <%= link_to "Create a cocktail", new_cocktail_path, class: 'hide'%>
+</div>
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image_path('banner_2.jpg')  %>);">
+  <div class="container">
+    <h1>Le Wagon brings <strong>tech skills</strong> to <strong>creative people</strong>!</h1>
+    <p>Change your life and learn to code at one of our campuses around the world.</p>
+    <%= link_to "Create a cocktail", new_cocktail_path, class: "banner-btn"  %>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="col-xs-12">
+    <h1>Cocktails</h1>
+
+    <%= link_to "Create a cocktail", new_cocktail_path, class: 'button-outline-dark' %>
+
+  </div>
+  <div class="row">
+    <div class="main-cards">
+      <% @cocktails.each do |cocktail| %>
+      <div class="col-xs-6 col-md-3 ">
+        <%= link_to cocktail, class: "main-card" do %>
+        <img class="img-fluid" src="<%= image_path('banner_1.jpg') %>" alt="">
+        <div class="main-card-content">
+          <%= cocktail.name %>
+        </div>
+        <% end %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
