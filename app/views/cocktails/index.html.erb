@@ -27,7 +27,7 @@
       <% @cocktails.each do |cocktail| %>
       <div class="col-xs-6 col-md-3 ">
         <%= link_to cocktail, class: "main-card" do %>
-        <img class="img-fluid" src="<%= image_path('banner_1.jpg') %>" alt="">
+        <%= cl_image_tag cocktail.photo, crop: :fill %>
         <div class="main-card-content">
           <%= cocktail.name %>
         </div>
